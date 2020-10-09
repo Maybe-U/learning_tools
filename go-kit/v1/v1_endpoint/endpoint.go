@@ -18,10 +18,10 @@ func NewEndPointServer(svc v1_service.Service) EndPointServer {
 	return EndPointServer{AddEndPoint: addEndPoint}
 }
 
-func (s EndPointServer) Add(ctx context.Context, in v1_service.Add) v1_service.AddAck {
-	res, _ := s.AddEndPoint(ctx, in)
-	return res.(v1_service.AddAck)
-}
+//func (s EndPointServer) Add(ctx context.Context, in v1_service.Add) v1_service.AddAck {
+//	res, _ := s.AddEndPoint(ctx, in)
+//	return res.(v1_service.AddAck)
+//}
 
 func MakeAddEndPoint(s v1_service.Service) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (response interface{}, err error) {
