@@ -24,6 +24,13 @@ func NewHttpHandler(endpoint v1_endpoint.EndPointServer) http.Handler {
 		encodeHTTPGenericResponse, //返回值
 		options...,
 	))
+	m.Handle("/sum2", httptransport.NewServer(
+		endpoint.RoundEndPoint,
+		decodeHTTPADDRequest,      //解析请求值
+		encodeHTTPGenericResponse, //返回值
+		options...,
+	))
+
 	return m
 }
 func decodeHTTPADDRequest(_ context.Context, r *http.Request) (interface{}, error) {
