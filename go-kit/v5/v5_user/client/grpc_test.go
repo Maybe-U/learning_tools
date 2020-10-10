@@ -44,8 +44,8 @@ func TestGrpc(t *testing.T) {
 	}
 	defer conn.Close()
 	userClient := pb.NewUserClient(conn)
-	UUID := uuid.NewV5(uuid.Must(uuid.NewV4()), "req_uuid").String()
-	md := metadata.Pairs( v5_service.ContextReqUUid, UUID)
+	UUID := uuid.NewV5(uuid.Must(uuid.NewV4(), nil), "req_uuid").String()
+	md := metadata.Pairs(v5_service.ContextReqUUid, UUID)
 	ctx := metadata.NewOutgoingContext(context.Background(), md)
 	res, err := userClient.RpcUserLogin(ctx, &pb.Login{
 		Account:  "hw",
