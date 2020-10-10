@@ -12,6 +12,7 @@ import (
 	"learning_tools/go-kit/v2/v2_service"
 	"net/http"
 	"strconv"
+	"time"
 )
 
 func NewHttpHandler(endpoint v2_endpoint.EndPointServer, log *zap.Logger) http.Handler {
@@ -21,12 +22,18 @@ func NewHttpHandler(endpoint v2_endpoint.EndPointServer, log *zap.Logger) http.H
 			w.WriteHeader(http.StatusOK)
 			json.NewEncoder(w).Encode(errorWrapper{Error: err.Error()})
 		}), //程序中的全部报错都会走这里面
-		//httptransport.ServerErrorHandler(NewZapLogErrorHandler(log)),
+		httptransport.ServerErrorHandler(NewZapLogErrorHandler(log)),
 		httptransport.ServerBefore(func(ctx context.Context, request *http.Request) context.Context {
+			ctx, _ = context.WithDeadline(ctx, time.Now().Add(1*time.Second))
 			UUID := uuid.NewV5(uuid.Must(uuid.NewV4(), nil), "req_uuid").String()
 			log.Debug("给请求添加uuid", zap.Any("UUID", UUID))
 			ctx = context.WithValue(ctx, v2_service.ContextReqUUid, UUID)
 			return ctx
+		}),
+
+		httptransport.ServerAfter(func(ctx context.Context, resp http.ResponseWriter) context.Context {
+			fmt.Println("hpj---------value", ctx.Value(v2_service.ContextReqUUid))
+			return context.WithValue(ctx, 12, 3223)
 		}),
 	}
 	m := http.NewServeMux()
@@ -46,6 +53,7 @@ func decodeHTTPADDRequest(ctx context.Context, r *http.Request) (interface{}, er
 	)
 	in.A, err = strconv.Atoi(r.FormValue("a"))
 	in.B, err = strconv.Atoi(r.FormValue("b"))
+	//err = errors.New("测试encode 出错------")
 	if err != nil {
 		return in, err
 	}
