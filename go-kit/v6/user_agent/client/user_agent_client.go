@@ -79,7 +79,7 @@ func (u *UserAgent) factoryFor(makeEndpoint func(src.Service) endpoint.Endpoint)
 func (u *UserAgent) NewGRPCClient(conn *grpc.ClientConn) src.Service {
 	options := []grpctransport.ClientOption{
 		grpctransport.ClientBefore(func(ctx context.Context, md *metadata.MD) context.Context {
-			UUID := uuid.NewV5(uuid.Must(uuid.NewV4()), "req_uuid").String()
+			UUID := uuid.NewV5(uuid.Must(uuid.NewV4(), nil), "req_uuid").String()
 			md.Set(src.ContextReqUUid, UUID)
 			ctx = metadata.NewOutgoingContext(context.Background(), *md)
 			return ctx
