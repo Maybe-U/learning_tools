@@ -16,7 +16,7 @@ import (
 func NewGRPCClient(conn *grpc.ClientConn, log *zap.Logger) v5_service.Service {
 	options := []grpctransport.ClientOption{
 		grpctransport.ClientBefore(func(ctx context.Context, md *metadata.MD) context.Context {
-			UUID := uuid.NewV5(uuid.Must(uuid.NewV4()), "req_uuid").String()
+			UUID := uuid.NewV5(uuid.Must(uuid.NewV4(), nil), "req_uuid").String()
 			log.Debug("给请求添加uuid", zap.Any("UUID", UUID))
 			md.Set(v5_service.ContextReqUUid, UUID)
 			ctx = metadata.NewOutgoingContext(context.Background(), *md)
