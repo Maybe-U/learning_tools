@@ -29,7 +29,7 @@ import (
 )
 
 var grpcAddr = flag.String("g", "127.0.0.1:8881", "grpcAddr")
-var prometheusAddr = flag.String("p", "192.168.2.28:10001", "prometheus addr")
+var prometheusAddr = flag.String("p", "127.0.0.1:10001", "prometheus addr")
 
 var quitChan = make(chan error, 1)
 
@@ -73,8 +73,8 @@ func main() {
 			Help:      "Request consumes time",
 		}, []string{"method"})
 		golangLimit := rate.NewLimiter(10, 1)
-		server := src.NewService(utils.GetLogger(), count, histogram,tracer)
-		endpoints := src.NewEndPointServer(server, golangLimit,tracer)
+		server := src.NewService(utils.GetLogger(), count, histogram, tracer)
+		endpoints := src.NewEndPointServer(server, golangLimit, tracer)
 		grpcServer := src.NewGRPCServer(endpoints, utils.GetLogger())
 		grpcListener, err := net.Listen("tcp", *grpcAddr)
 		if err != nil {
@@ -86,7 +86,7 @@ func main() {
 		utils.GetLogger().Info("[user_agent] grpc run " + *grpcAddr)
 		chainUnaryServer := grpcmiddleware.ChainUnaryServer(
 			grpctransport.Interceptor,
-		 	grpc_opentracing.UnaryServerInterceptor(grpc_opentracing.WithTracer(tracer)),
+			grpc_opentracing.UnaryServerInterceptor(grpc_opentracing.WithTracer(tracer)),
 			grpc_zap.UnaryServerInterceptor(utils.GetLogger()),
 			//utils.JaegerServerMiddleware(tracer),
 		)

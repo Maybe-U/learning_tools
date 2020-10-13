@@ -26,7 +26,7 @@ import (
 )
 
 var grpcAddr = flag.String("g", "127.0.0.1:8881", "grpcAddr")
-var prometheusAddr = flag.String("p", "192.168.2.28:10001", "prometheus addr")
+var prometheusAddr = flag.String("p", "127.0.0.1:10001", "prometheus addr")
 
 var quitChan = make(chan error, 1)
 
