@@ -1,0 +1,2 @@
+{"level":"info","ts":1602343284694,"caller":"logtool/log.go:89","msg":"[NewLogger] success"}
+{"level":"info","ts":1602343284694,"caller":"v4/main.go:20","msg":"server run 0.0.0.0:8888"}

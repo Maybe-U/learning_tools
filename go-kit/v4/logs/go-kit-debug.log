@@ -1,0 +1,84 @@
+{"level":"debug","ts":1602343307768,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"a93715b0-b9a0-5950-9774-117da0cf31e9"}
+{"level":"debug","ts":1602343307768,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343307768,"caller":"v4_transport/transport.go:56","msg":"a93715b0-b9a0-5950-9774-117da0cf31e9"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343307769,"caller":"v4_service/service.go:38","msg":"a93715b0-b9a0-5950-9774-117da0cf31e9","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343307769,"caller":"v4_service/middleware.go:37","msg":"a93715b0-b9a0-5950-9774-117da0cf31e9","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343307769,"caller":"v4_endpoint/middleware.go:20","msg":"a93715b0-b9a0-5950-9774-117da0cf31e9","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343308593,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"dd26995f-c5e8-54e0-95b6-96b4e7b78b41"}
+{"level":"debug","ts":1602343308593,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343308593,"caller":"v4_transport/transport.go:56","msg":"dd26995f-c5e8-54e0-95b6-96b4e7b78b41"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343308593,"caller":"v4_service/service.go:38","msg":"dd26995f-c5e8-54e0-95b6-96b4e7b78b41","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343308593,"caller":"v4_service/middleware.go:37","msg":"dd26995f-c5e8-54e0-95b6-96b4e7b78b41","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343308593,"caller":"v4_endpoint/middleware.go:20","msg":"dd26995f-c5e8-54e0-95b6-96b4e7b78b41","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343316747,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"56237a97-69ea-5369-ae72-8d2c03730243"}
+{"level":"debug","ts":1602343316747,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343316747,"caller":"v4_transport/transport.go:56","msg":"56237a97-69ea-5369-ae72-8d2c03730243"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343316747,"caller":"v4_service/service.go:38","msg":"56237a97-69ea-5369-ae72-8d2c03730243","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343316747,"caller":"v4_service/middleware.go:37","msg":"56237a97-69ea-5369-ae72-8d2c03730243","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343316747,"caller":"v4_endpoint/middleware.go:20","msg":"56237a97-69ea-5369-ae72-8d2c03730243","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343317241,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"52f84b3d-10d6-5759-8021-69290367d2b3"}
+{"level":"debug","ts":1602343317241,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343317241,"caller":"v4_transport/transport.go:56","msg":"52f84b3d-10d6-5759-8021-69290367d2b3"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343317241,"caller":"v4_service/service.go:38","msg":"52f84b3d-10d6-5759-8021-69290367d2b3","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343317241,"caller":"v4_service/middleware.go:37","msg":"52f84b3d-10d6-5759-8021-69290367d2b3","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343317241,"caller":"v4_endpoint/middleware.go:20","msg":"52f84b3d-10d6-5759-8021-69290367d2b3","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343317748,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"dce7c6b5-39cc-57af-bf4f-397131954c04"}
+{"level":"debug","ts":1602343317749,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343317749,"caller":"v4_transport/transport.go:56","msg":"dce7c6b5-39cc-57af-bf4f-397131954c04"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343317749,"caller":"v4_service/service.go:38","msg":"dce7c6b5-39cc-57af-bf4f-397131954c04","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343317749,"caller":"v4_service/middleware.go:37","msg":"dce7c6b5-39cc-57af-bf4f-397131954c04","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343317749,"caller":"v4_endpoint/middleware.go:20","msg":"dce7c6b5-39cc-57af-bf4f-397131954c04","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343318326,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"64f1d922-e738-5e7c-8e5f-5165c64b9efe"}
+{"level":"debug","ts":1602343318326,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343318327,"caller":"v4_transport/transport.go:56","msg":"64f1d922-e738-5e7c-8e5f-5165c64b9efe"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343318327,"caller":"v4_service/service.go:38","msg":"64f1d922-e738-5e7c-8e5f-5165c64b9efe","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343318327,"caller":"v4_service/middleware.go:37","msg":"64f1d922-e738-5e7c-8e5f-5165c64b9efe","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343318327,"caller":"v4_endpoint/middleware.go:20","msg":"64f1d922-e738-5e7c-8e5f-5165c64b9efe","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343318708,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"555158ef-569e-5140-a341-fe770e450909"}
+{"level":"debug","ts":1602343318708,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343318708,"caller":"v4_transport/transport.go:56","msg":"555158ef-569e-5140-a341-fe770e450909"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343318708,"caller":"v4_service/service.go:38","msg":"555158ef-569e-5140-a341-fe770e450909","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343318708,"caller":"v4_service/middleware.go:37","msg":"555158ef-569e-5140-a341-fe770e450909","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343318708,"caller":"v4_endpoint/middleware.go:20","msg":"555158ef-569e-5140-a341-fe770e450909","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343319256,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"9542207b-5c2a-5064-91ef-e23707441a69"}
+{"level":"debug","ts":1602343319256,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343319256,"caller":"v4_transport/transport.go:56","msg":"9542207b-5c2a-5064-91ef-e23707441a69"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343319256,"caller":"v4_service/service.go:38","msg":"9542207b-5c2a-5064-91ef-e23707441a69","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343319256,"caller":"v4_service/middleware.go:37","msg":"9542207b-5c2a-5064-91ef-e23707441a69","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343319256,"caller":"v4_endpoint/middleware.go:20","msg":"9542207b-5c2a-5064-91ef-e23707441a69","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343319710,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"0e6e54a2-ef90-5958-817e-59a976ab3d44"}
+{"level":"debug","ts":1602343319710,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343319710,"caller":"v4_transport/transport.go:56","msg":"0e6e54a2-ef90-5958-817e-59a976ab3d44"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343319710,"caller":"v4_service/service.go:38","msg":"0e6e54a2-ef90-5958-817e-59a976ab3d44","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343319710,"caller":"v4_service/middleware.go:37","msg":"0e6e54a2-ef90-5958-817e-59a976ab3d44","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343319710,"caller":"v4_endpoint/middleware.go:20","msg":"0e6e54a2-ef90-5958-817e-59a976ab3d44","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343320188,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"3a2e2b9f-2730-529f-9ef0-c1d7eb2e6a82"}
+{"level":"debug","ts":1602343320188,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343320188,"caller":"v4_transport/transport.go:56","msg":"3a2e2b9f-2730-529f-9ef0-c1d7eb2e6a82"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343320188,"caller":"v4_service/service.go:38","msg":"3a2e2b9f-2730-529f-9ef0-c1d7eb2e6a82","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343320188,"caller":"v4_service/middleware.go:37","msg":"3a2e2b9f-2730-529f-9ef0-c1d7eb2e6a82","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343320188,"caller":"v4_endpoint/middleware.go:20","msg":"3a2e2b9f-2730-529f-9ef0-c1d7eb2e6a82","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343320710,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"7a405923-6097-5602-9972-a2f5deb90aa3"}
+{"level":"debug","ts":1602343320711,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343320711,"caller":"v4_transport/transport.go:56","msg":"7a405923-6097-5602-9972-a2f5deb90aa3"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343320711,"caller":"v4_service/service.go:38","msg":"7a405923-6097-5602-9972-a2f5deb90aa3","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343320711,"caller":"v4_service/middleware.go:37","msg":"7a405923-6097-5602-9972-a2f5deb90aa3","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343320711,"caller":"v4_endpoint/middleware.go:20","msg":"7a405923-6097-5602-9972-a2f5deb90aa3","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343321177,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"db2b5b21-6853-537e-97b5-4d5051f35721"}
+{"level":"debug","ts":1602343321177,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343321177,"caller":"v4_transport/transport.go:56","msg":"db2b5b21-6853-537e-97b5-4d5051f35721"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343321177,"caller":"v4_service/service.go:38","msg":"db2b5b21-6853-537e-97b5-4d5051f35721","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343321177,"caller":"v4_service/middleware.go:37","msg":"db2b5b21-6853-537e-97b5-4d5051f35721","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343321177,"caller":"v4_endpoint/middleware.go:20","msg":"db2b5b21-6853-537e-97b5-4d5051f35721","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343321554,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"9cf76cc5-c6b6-5a0f-a869-16f256e6fdc4"}
+{"level":"debug","ts":1602343321554,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343321554,"caller":"v4_transport/transport.go:56","msg":"9cf76cc5-c6b6-5a0f-a869-16f256e6fdc4"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343321554,"caller":"v4_service/service.go:38","msg":"9cf76cc5-c6b6-5a0f-a869-16f256e6fdc4","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343321554,"caller":"v4_service/middleware.go:37","msg":"9cf76cc5-c6b6-5a0f-a869-16f256e6fdc4","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343321554,"caller":"v4_endpoint/middleware.go:20","msg":"9cf76cc5-c6b6-5a0f-a869-16f256e6fdc4","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
+{"level":"debug","ts":1602343321965,"caller":"v4_transport/transport.go:26","msg":"给请求添加uuid","UUID":"fa33d93b-8529-552e-b171-95b425af19bc"}
+{"level":"debug","ts":1602343321965,"caller":"v4_transport/transport.go:29","msg":"把请求中的token发到Context中","Token":""}
+{"level":"debug","ts":1602343321965,"caller":"v4_transport/transport.go:56","msg":"fa33d93b-8529-552e-b171-95b425af19bc"," 开始解析请求数据":{"account":"","password":""}}
+{"level":"debug","ts":1602343321965,"caller":"v4_service/service.go:38","msg":"fa33d93b-8529-552e-b171-95b425af19bc","调用 v4_service Service":"Login 处理请求"}
+{"level":"debug","ts":1602343321965,"caller":"v4_service/middleware.go:37","msg":"fa33d93b-8529-552e-b171-95b425af19bc","调用 Login logMiddlewareServer":"Login","req":{"account":"","password":""},"res":{"token":""},"err":"用户信息错误"}
+{"level":"debug","ts":1602343321965,"caller":"v4_endpoint/middleware.go:20","msg":"fa33d93b-8529-552e-b171-95b425af19bc","调用 v4_endpoint LoggingMiddleware":"处理完请求","耗时毫秒":0}
