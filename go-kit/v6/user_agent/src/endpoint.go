@@ -16,15 +16,15 @@ func NewEndPointServer(svc Service, limit *rate.Limiter) EndPointServer {
 	{
 		loginEndPoint = MakeLoginEndPoint(svc)
 		loginEndPoint = NewGolangRateAllowMiddleware(limit)(loginEndPoint)
+		//loginEndPoint = MyMiddleware(loginEndPoint)
 	}
 	return EndPointServer{LoginEndPoint: loginEndPoint}
 }
 
-
 func (s EndPointServer) Login(ctx context.Context, in *pb.Login) (*pb.LoginAck, error) {
 	res, err := s.LoginEndPoint(ctx, in)
-	if err!=nil{
-		return nil,err
+	if err != nil {
+		return nil, err
 	}
 	return res.(*pb.LoginAck), nil
 }

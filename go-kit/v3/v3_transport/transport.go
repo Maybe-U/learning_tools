@@ -22,7 +22,7 @@ func NewHttpHandler(endpoint v3_endpoint.EndPointServer, log *zap.Logger) http.H
 			json.NewEncoder(w).Encode(errorWrapper{Error: err.Error()})
 		}), //程序中的全部报错都会走这里面
 		httptransport.ServerBefore(func(ctx context.Context, request *http.Request) context.Context {
-			UUID := uuid.NewV5(uuid.Must(uuid.NewV4()), "req_uuid").String()
+			UUID := uuid.NewV5(uuid.Must(uuid.NewV4(), nil), "req_uuid").String()
 			log.Debug("给请求添加uuid", zap.Any("UUID", UUID))
 			ctx = context.WithValue(ctx, v3_service.ContextReqUUid, UUID)
 			ctx = context.WithValue(ctx, utils.JWT_CONTEXT_KEY, request.Header.Get("Authorization"))
