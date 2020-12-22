@@ -1,0 +1,4 @@
+{"level":"info","ts":1602343474571,"caller":"logtool/log.go:89","msg":"[NewLogger] success"}
+{"level":"info","ts":1602343474571,"caller":"v5_user/main.go:23","msg":"server run :8881"}
+{"level":"info","ts":1602344989540,"caller":"logtool/log.go:89","msg":"[NewLogger] success"}
+{"level":"info","ts":1602344989541,"caller":"v5_user/main.go:23","msg":"server run :8881"}
