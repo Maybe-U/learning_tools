@@ -88,7 +88,7 @@ func main() {
 			grpctransport.Interceptor,
 			grpc_opentracing.UnaryServerInterceptor(grpc_opentracing.WithTracer(tracer)),
 			grpc_zap.UnaryServerInterceptor(utils.GetLogger()),
-			//utils.JaegerServerMiddleware(tracer),
+			utils.JaegerServerMiddleware(tracer),
 		)
 		baseServer := grpc.NewServer(grpc.UnaryInterceptor(chainUnaryServer))
 		pb.RegisterUserServer(baseServer, grpcServer)

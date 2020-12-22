@@ -6,7 +6,8 @@ require (
 	github.com/afex/hystrix-go v0.0.0-20180502004556-fa1af6a1f4f5
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/go-kit/kit v0.10.0
-	github.com/golang/protobuf v1.4.2
+	github.com/golang/protobuf v1.4.3
+	github.com/micro/micro/v3 v3.0.0-beta.6 // indirect
 	github.com/natefinch/lumberjack v2.0.0+incompatible // indirect
 	github.com/prometheus/client_golang v1.3.0
 	github.com/satori/go.uuid v1.2.0

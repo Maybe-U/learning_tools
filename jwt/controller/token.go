@@ -14,7 +14,7 @@ type TokenController struct {
 
 func (c *TokenController) CreateToken(w http.ResponseWriter, r *http.Request) {
 	token := jwt.New(jwt.SigningMethodHS256)
-	claims := make(jwt.MapClaims, 4)
+	claims := make(jwt.MapCl[aims, 4)
 	claims["exp"] = time.Now().Add(30 * time.Second).Unix()
 	claims["uid"] = 123
 	claims["name"] = "howie"
