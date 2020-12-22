@@ -2,8 +2,11 @@
 
 run:
 	protoc -I . \
-			--go_out ./gen/go/ --go_opt=paths=./proto/  \
-			--go-grpc_out ./gen/go/ --go-grpc_opt=paths=./proto  proto/api.proto
+			--go_out ./ --go_opt=paths=import  \
+			--go-grpc_out ./ --go-grpc_opt=paths=import \
+			--grpc-gateway_out ./  \
+			--grpc-gateway_opt paths=import  \
+			proto/api.proto
 
 test:
 	# 这是测试
